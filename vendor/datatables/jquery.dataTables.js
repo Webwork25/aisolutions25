@@ -22,7 +22,7 @@
  */
 
 /*jslint evil: true, undef: true, browser: true */
-/*globals $,require,jQuery,define,_selector_run,_selector_opts,_selector_first,_selector_row_indexes,_ext,_Api,_api_register,_api_registerPlural,_re_new_lines,_re_html,_re_formatted_numeric,_re_escape_regex,_empty,_intVal,_numToDecimal,_isNumber,_isHtml,_htmlNumeric,_pluck,_pluck_order,_range,_stripHtml,_unique,_fnBuildAjax,_fnAjaxUpdate,_fnAjaxParameters,_fnAjaxUpdateDraw,_fnAjaxDataSrc,_fnAddColumn,_fnColumnOptions,_fnAdjustColumnSizing,_fnVisibleToColumnIndex,_fnColumnIndexToVisible,_fnVisbleColumns,_fnGetColumns,_fnColumnTypes,_fnApplyColumnDefs,_fnHungarianMap,_fnCamelToHungarian,_fnLanguageCompat,_fnBrowserDetect,_fnAddData,_fnAddTr,_fnNodeToDataIndex,_fnNodeToColumnIndex,_fnGetCellData,_fnSetCellData,_fnSplitObjNotation,_fnGetObjectDataFn,_fnSetObjectDataFn,_fnGetDataMaster,_fnClearTable,_fnDeleteIndex,_fnInvalidate,_fnGetRowElements,_fnCreateTr,_fnBuildHead,_fnDrawHead,_fnDraw,_fnReDraw,_fnAddOptionsHtml,_fnDetectHeader,_fnGetUniqueThs,_fnFeatureHtmlFilter,_fnFilterComplete,_fnFilterCustom,_fnFilterColumn,_fnFilter,_fnFilterCreateSearch,_fnEscapeRegex,_fnFilterData,_fnFeatureHtmlInfo,_fnUpdateInfo,_fnInfoMacros,_fnInitialise,_fnInitComplete,_fnLengthChange,_fnFeatureHtmlLength,_fnFeatureHtmlPaginate,_fnPageChange,_fnFeatureHtmlProcessing,_fnProcessingDisplay,_fnFeatureHtmlTable,_fnScrollDraw,_fnApplyToChildren,_fnCalculateColumnWidths,_fnThrottle,_fnConvertToWidth,_fnGetWidestNode,_fnGetMaxLenString,_fnStringToCss,_fnSortFlatten,_fnSort,_fnSortAria,_fnSortListener,_fnSortAttachListener,_fnSortingClasses,_fnSortData,_fnSaveState,_fnLoadState,_fnSettingsFromNode,_fnLog,_fnMap,_fnBindAction,_fnCallbackReg,_fnCallbackFire,_fnLengthOverflow,_fnRenderer,_fnDataSource,_fnRowAttributes*/
+/*globals $,require,jQuery,define,_selector_run,_selector_opts,_selector_first,_selector_row_indexes,_ext,_Api,_api_  ,_api_  Plural,_re_new_lines,_re_html,_re_formatted_numeric,_re_escape_regex,_empty,_intVal,_numToDecimal,_isNumber,_isHtml,_htmlNumeric,_pluck,_pluck_order,_range,_stripHtml,_unique,_fnBuildAjax,_fnAjaxUpdate,_fnAjaxParameters,_fnAjaxUpdateDraw,_fnAjaxDataSrc,_fnAddColumn,_fnColumnOptions,_fnAdjustColumnSizing,_fnVisibleToColumnIndex,_fnColumnIndexToVisible,_fnVisbleColumns,_fnGetColumns,_fnColumnTypes,_fnApplyColumnDefs,_fnHungarianMap,_fnCamelToHungarian,_fnLanguageCompat,_fnBrowserDetect,_fnAddData,_fnAddTr,_fnNodeToDataIndex,_fnNodeToColumnIndex,_fnGetCellData,_fnSetCellData,_fnSplitObjNotation,_fnGetObjectDataFn,_fnSetObjectDataFn,_fnGetDataMaster,_fnClearTable,_fnDeleteIndex,_fnInvalidate,_fnGetRowElements,_fnCreateTr,_fnBuildHead,_fnDrawHead,_fnDraw,_fnReDraw,_fnAddOptionsHtml,_fnDetectHeader,_fnGetUniqueThs,_fnFeatureHtmlFilter,_fnFilterComplete,_fnFilterCustom,_fnFilterColumn,_fnFilter,_fnFilterCreateSearch,_fnEscapeRegex,_fnFilterData,_fnFeatureHtmlInfo,_fnUpdateInfo,_fnInfoMacros,_fnInitialise,_fnInitComplete,_fnLengthChange,_fnFeatureHtmlLength,_fnFeatureHtmlPaginate,_fnPageChange,_fnFeatureHtmlProcessing,_fnProcessingDisplay,_fnFeatureHtmlTable,_fnScrollDraw,_fnApplyToChildren,_fnCalculateColumnWidths,_fnThrottle,_fnConvertToWidth,_fnGetWidestNode,_fnGetMaxLenString,_fnStringToCss,_fnSortFlatten,_fnSort,_fnSortAria,_fnSortListener,_fnSortAttachListener,_fnSortingClasses,_fnSortData,_fnSaveState,_fnLoadState,_fnSettingsFromNode,_fnLog,_fnMap,_fnBindAction,_fnCallbackReg,_fnCallbackFire,_fnLengthOverflow,_fnRenderer,_fnDataSource,_fnRowAttributes*/
 
 (function( factory ) {
 	"use strict";
@@ -1330,8 +1330,8 @@
 	
 	var _ext; // DataTable.ext
 	var _Api; // DataTable.Api
-	var _api_register; // DataTable.Api.register
-	var _api_registerPlural; // DataTable.Api.registerPlural
+	var _api_  ; // DataTable.Api.  
+	var _api_  Plural; // DataTable.Api.  Plural
 	
 	var _re_dic = {};
 	var _re_new_lines = /[\r\n]/g;
@@ -2417,7 +2417,7 @@
 			oSettings.aIds[ id ] = oData;
 		}
 	
-		/* Create the DOM information, or register it if already present */
+		/* Create the DOM information, or    it if already present */
 		if ( nTr || ! oSettings.oFeatures.bDeferRender )
 		{
 			_fnCreateTr( oSettings, iRow, nTr, anTds );
@@ -6593,7 +6593,7 @@
 	
 	
 	/**
-	 * Register a callback function. Easily allows a callback function to be added to
+	 *    a callback function. Easily allows a callback function to be added to
 	 * an array store of callback functions that can then all be called together.
 	 *  @param {object} oSettings dataTables settings object
 	 *  @param {string} sStore Name of the array storage for the callbacks in oSettings
@@ -6719,7 +6719,7 @@
 	
 	/**
 	 * Computed structure of the DataTables API, defined by the options passed to
-	 * `DataTable.Api.register()` when building the API.
+	 * `DataTable.Api.  ()` when building the API.
 	 *
 	 * The structure is built in order to speed creation and extension of the Api
 	 * objects since the extensions are effectively pre-parsed.
@@ -7251,11 +7251,11 @@
 	//       }
 	//     ]
 	
-	_Api.register = _api_register = function ( name, val )
+	_Api.   = _api_   = function ( name, val )
 	{
 		if ( $.isArray( name ) ) {
 			for ( var j=0, jen=name.length ; j<jen ; j++ ) {
-				_Api.register( name[j], val );
+				_Api.  ( name[j], val );
 			}
 			return;
 		}
@@ -7304,10 +7304,10 @@
 	};
 	
 	
-	_Api.registerPlural = _api_registerPlural = function ( pluralName, singularName, val ) {
-		_Api.register( pluralName, val );
+	_Api.  Plural = _api_  Plural = function ( pluralName, singularName, val ) {
+		_Api.  ( pluralName, val );
 	
-		_Api.register( singularName, function () {
+		_Api.  ( singularName, function () {
 			var ret = val.apply( this, arguments );
 	
 			if ( ret === this ) {
@@ -7374,7 +7374,7 @@
 	 *   select multiple tables or as an integer to select a single table.
 	 * @returns {DataTable.Api} Returns a new API instance if a selector is given.
 	 */
-	_api_register( 'tables()', function ( selector ) {
+	_api_  ( 'tables()', function ( selector ) {
 		// A new instance is created if there was a selector specified
 		return selector ?
 			new _Api( __table_selector( selector, this.context ) ) :
@@ -7382,7 +7382,7 @@
 	} );
 	
 	
-	_api_register( 'table()', function ( selector ) {
+	_api_  ( 'table()', function ( selector ) {
 		var tables = this.tables( selector );
 		var ctx = tables.context;
 	
@@ -7393,35 +7393,35 @@
 	} );
 	
 	
-	_api_registerPlural( 'tables().nodes()', 'table().node()' , function () {
+	_api_  Plural( 'tables().nodes()', 'table().node()' , function () {
 		return this.iterator( 'table', function ( ctx ) {
 			return ctx.nTable;
 		}, 1 );
 	} );
 	
 	
-	_api_registerPlural( 'tables().body()', 'table().body()' , function () {
+	_api_  Plural( 'tables().body()', 'table().body()' , function () {
 		return this.iterator( 'table', function ( ctx ) {
 			return ctx.nTBody;
 		}, 1 );
 	} );
 	
 	
-	_api_registerPlural( 'tables().header()', 'table().header()' , function () {
+	_api_  Plural( 'tables().header()', 'table().header()' , function () {
 		return this.iterator( 'table', function ( ctx ) {
 			return ctx.nTHead;
 		}, 1 );
 	} );
 	
 	
-	_api_registerPlural( 'tables().footer()', 'table().footer()' , function () {
+	_api_  Plural( 'tables().footer()', 'table().footer()' , function () {
 		return this.iterator( 'table', function ( ctx ) {
 			return ctx.nTFoot;
 		}, 1 );
 	} );
 	
 	
-	_api_registerPlural( 'tables().containers()', 'table().container()' , function () {
+	_api_  Plural( 'tables().containers()', 'table().container()' , function () {
 		return this.iterator( 'table', function ( ctx ) {
 			return ctx.nTableWrapper;
 		}, 1 );
@@ -7432,7 +7432,7 @@
 	/**
 	 * Redraw the tables in the current context.
 	 */
-	_api_register( 'draw()', function ( paging ) {
+	_api_  ( 'draw()', function ( paging ) {
 		return this.iterator( 'table', function ( settings ) {
 			if ( paging === 'page' ) {
 				_fnDraw( settings );
@@ -7470,7 +7470,7 @@
 	 *    * `last` - Jump to the last page.
 	 * @returns {DataTables.Api} this
 	 */
-	_api_register( 'page()', function ( action ) {
+	_api_  ( 'page()', function ( action ) {
 		if ( action === undefined ) {
 			return this.page.info().page; // not an expensive call
 		}
@@ -7500,7 +7500,7 @@
 	 *  * `recordsDisplay` - Data set length once the current filtering criterion
 	 *    are applied.
 	 */
-	_api_register( 'page.info()', function ( action ) {
+	_api_  ( 'page.info()', function ( action ) {
 		if ( this.context.length === 0 ) {
 			return undefined;
 		}
@@ -7536,7 +7536,7 @@
 	 * @param {integer} Page length to set. Use `-1` to show all records.
 	 * @returns {DataTables.Api} this
 	 */
-	_api_register( 'page.len()', function ( len ) {
+	_api_  ( 'page.len()', function ( len ) {
 		// Note that we can't call this function 'length()' because `length`
 		// is a Javascript property of functions which defines how many arguments
 		// the function expects.
@@ -7599,7 +7599,7 @@
 	 *
 	 * @return {object} JSON received from the server.
 	 */
-	_api_register( 'ajax.json()', function () {
+	_api_  ( 'ajax.json()', function () {
 		var ctx = this.context;
 	
 		if ( ctx.length > 0 ) {
@@ -7613,7 +7613,7 @@
 	/**
 	 * Get the data submitted in the last Ajax request
 	 */
-	_api_register( 'ajax.params()', function () {
+	_api_  ( 'ajax.params()', function () {
 		var ctx = this.context;
 	
 		if ( ctx.length > 0 ) {
@@ -7633,7 +7633,7 @@
 	 *   called, which is why the pagination reset is the default action.
 	 * @returns {DataTables.Api} this
 	 */
-	_api_register( 'ajax.reload()', function ( callback, resetPaging ) {
+	_api_  ( 'ajax.reload()', function ( callback, resetPaging ) {
 		return this.iterator( 'table', function (settings) {
 			__reload( settings, resetPaging===false, callback );
 		} );
@@ -7652,7 +7652,7 @@
 	 * @param {string} url URL to set.
 	 * @returns {DataTables.Api} this
 	 */
-	_api_register( 'ajax.url()', function ( url ) {
+	_api_  ( 'ajax.url()', function ( url ) {
 		var ctx = this.context;
 	
 		if ( url === undefined ) {
@@ -7693,7 +7693,7 @@
 	 *
 	 * @returns {DataTables.Api} this
 	 */
-	_api_register( 'ajax.url().load()', function ( callback, resetPaging ) {
+	_api_  ( 'ajax.url().load()', function ( callback, resetPaging ) {
 		// Same as a reload, but makes sense to present it for easy access after a
 		// url change
 		return this.iterator( 'table', function ( ctx ) {
@@ -7968,7 +7968,7 @@
 	};
 	
 	
-	_api_register( 'rows()', function ( selector, opts ) {
+	_api_  ( 'rows()', function ( selector, opts ) {
 		// argument shifting
 		if ( selector === undefined ) {
 			selector = '';
@@ -7991,38 +7991,38 @@
 		return inst;
 	} );
 	
-	_api_register( 'rows().nodes()', function () {
+	_api_  ( 'rows().nodes()', function () {
 		return this.iterator( 'row', function ( settings, row ) {
 			return settings.aoData[ row ].nTr || undefined;
 		}, 1 );
 	} );
 	
-	_api_register( 'rows().data()', function () {
+	_api_  ( 'rows().data()', function () {
 		return this.iterator( true, 'rows', function ( settings, rows ) {
 			return _pluck_order( settings.aoData, rows, '_aData' );
 		}, 1 );
 	} );
 	
-	_api_registerPlural( 'rows().cache()', 'row().cache()', function ( type ) {
+	_api_  Plural( 'rows().cache()', 'row().cache()', function ( type ) {
 		return this.iterator( 'row', function ( settings, row ) {
 			var r = settings.aoData[ row ];
 			return type === 'search' ? r._aFilterData : r._aSortData;
 		}, 1 );
 	} );
 	
-	_api_registerPlural( 'rows().invalidate()', 'row().invalidate()', function ( src ) {
+	_api_  Plural( 'rows().invalidate()', 'row().invalidate()', function ( src ) {
 		return this.iterator( 'row', function ( settings, row ) {
 			_fnInvalidate( settings, row, src );
 		} );
 	} );
 	
-	_api_registerPlural( 'rows().indexes()', 'row().index()', function () {
+	_api_  Plural( 'rows().indexes()', 'row().index()', function () {
 		return this.iterator( 'row', function ( settings, row ) {
 			return row;
 		}, 1 );
 	} );
 	
-	_api_registerPlural( 'rows().ids()', 'row().id()', function ( hash ) {
+	_api_  Plural( 'rows().ids()', 'row().id()', function ( hash ) {
 		var a = [];
 		var context = this.context;
 	
@@ -8037,7 +8037,7 @@
 		return new _Api( context, a );
 	} );
 	
-	_api_registerPlural( 'rows().remove()', 'row().remove()', function () {
+	_api_  Plural( 'rows().remove()', 'row().remove()', function () {
 		var that = this;
 	
 		this.iterator( 'row', function ( settings, row, thatIdx ) {
@@ -8096,7 +8096,7 @@
 	} );
 	
 	
-	_api_register( 'rows.add()', function ( rows ) {
+	_api_  ( 'rows.add()', function ( rows ) {
 		var newRows = this.iterator( 'table', function ( settings ) {
 				var row, i, ien;
 				var out = [];
@@ -8130,12 +8130,12 @@
 	/**
 	 *
 	 */
-	_api_register( 'row()', function ( selector, opts ) {
+	_api_  ( 'row()', function ( selector, opts ) {
 		return _selector_first( this.rows( selector, opts ) );
 	} );
 	
 	
-	_api_register( 'row().data()', function ( data ) {
+	_api_  ( 'row().data()', function ( data ) {
 		var ctx = this.context;
 	
 		if ( data === undefined ) {
@@ -8161,7 +8161,7 @@
 	} );
 	
 	
-	_api_register( 'row().node()', function () {
+	_api_  ( 'row().node()', function () {
 		var ctx = this.context;
 	
 		return ctx.length && this.length ?
@@ -8170,7 +8170,7 @@
 	} );
 	
 	
-	_api_register( 'row.add()', function ( row ) {
+	_api_  ( 'row.add()', function ( row ) {
 		// Allow a jQuery object to be passed in - only a single row is added from
 		// it though - the first element in the set
 		if ( row instanceof $ && row.length ) {
@@ -8345,7 +8345,7 @@
 	//  tr
 	//  string
 	//  jQuery or array of any of the above
-	_api_register( _child_mth, function ( data, klass ) {
+	_api_  ( _child_mth, function ( data, klass ) {
 		var ctx = this.context;
 	
 		if ( data === undefined ) {
@@ -8371,7 +8371,7 @@
 	} );
 	
 	
-	_api_register( [
+	_api_  ( [
 		_child_obj+'.show()',
 		_child_mth+'.show()' // only when `child()` was called with parameters (without
 	], function ( show ) {   // it returns an object and this method is not executed)
@@ -8380,7 +8380,7 @@
 	} );
 	
 	
-	_api_register( [
+	_api_  ( [
 		_child_obj+'.hide()',
 		_child_mth+'.hide()' // only when `child()` was called with parameters (without
 	], function () {         // it returns an object and this method is not executed)
@@ -8389,7 +8389,7 @@
 	} );
 	
 	
-	_api_register( [
+	_api_  ( [
 		_child_obj+'.remove()',
 		_child_mth+'.remove()' // only when `child()` was called with parameters (without
 	], function () {           // it returns an object and this method is not executed)
@@ -8398,7 +8398,7 @@
 	} );
 	
 	
-	_api_register( _child_obj+'.isShown()', function () {
+	_api_  ( _child_obj+'.isShown()', function () {
 		var ctx = this.context;
 	
 		if ( ctx.length && this.length ) {
@@ -8588,7 +8588,7 @@
 	};
 	
 	
-	_api_register( 'columns()', function ( selector, opts ) {
+	_api_  ( 'columns()', function ( selector, opts ) {
 		// argument shifting
 		if ( selector === undefined ) {
 			selector = '';
@@ -8611,29 +8611,29 @@
 		return inst;
 	} );
 	
-	_api_registerPlural( 'columns().header()', 'column().header()', function ( selector, opts ) {
+	_api_  Plural( 'columns().header()', 'column().header()', function ( selector, opts ) {
 		return this.iterator( 'column', function ( settings, column ) {
 			return settings.aoColumns[column].nTh;
 		}, 1 );
 	} );
 	
-	_api_registerPlural( 'columns().footer()', 'column().footer()', function ( selector, opts ) {
+	_api_  Plural( 'columns().footer()', 'column().footer()', function ( selector, opts ) {
 		return this.iterator( 'column', function ( settings, column ) {
 			return settings.aoColumns[column].nTf;
 		}, 1 );
 	} );
 	
-	_api_registerPlural( 'columns().data()', 'column().data()', function () {
+	_api_  Plural( 'columns().data()', 'column().data()', function () {
 		return this.iterator( 'column-rows', __columnData, 1 );
 	} );
 	
-	_api_registerPlural( 'columns().dataSrc()', 'column().dataSrc()', function () {
+	_api_  Plural( 'columns().dataSrc()', 'column().dataSrc()', function () {
 		return this.iterator( 'column', function ( settings, column ) {
 			return settings.aoColumns[column].mData;
 		}, 1 );
 	} );
 	
-	_api_registerPlural( 'columns().cache()', 'column().cache()', function ( type ) {
+	_api_  Plural( 'columns().cache()', 'column().cache()', function ( type ) {
 		return this.iterator( 'column-rows', function ( settings, column, i, j, rows ) {
 			return _pluck_order( settings.aoData, rows,
 				type === 'search' ? '_aFilterData' : '_aSortData', column
@@ -8641,13 +8641,13 @@
 		}, 1 );
 	} );
 	
-	_api_registerPlural( 'columns().nodes()', 'column().nodes()', function () {
+	_api_  Plural( 'columns().nodes()', 'column().nodes()', function () {
 		return this.iterator( 'column-rows', function ( settings, column, i, j, rows ) {
 			return _pluck_order( settings.aoData, rows, 'anCells', column ) ;
 		}, 1 );
 	} );
 	
-	_api_registerPlural( 'columns().visible()', 'column().visible()', function ( vis, calc ) {
+	_api_  Plural( 'columns().visible()', 'column().visible()', function ( vis, calc ) {
 		var ret = this.iterator( 'column', function ( settings, column ) {
 			if ( vis === undefined ) {
 				return settings.aoColumns[ column ].bVisible;
@@ -8670,7 +8670,7 @@
 		return ret;
 	} );
 	
-	_api_registerPlural( 'columns().indexes()', 'column().index()', function ( type ) {
+	_api_  Plural( 'columns().indexes()', 'column().index()', function ( type ) {
 		return this.iterator( 'column', function ( settings, column ) {
 			return type === 'visible' ?
 				_fnColumnIndexToVisible( settings, column ) :
@@ -8678,13 +8678,13 @@
 		}, 1 );
 	} );
 	
-	_api_register( 'columns.adjust()', function () {
+	_api_  ( 'columns.adjust()', function () {
 		return this.iterator( 'table', function ( settings ) {
 			_fnAdjustColumnSizing( settings );
 		}, 1 );
 	} );
 	
-	_api_register( 'column.index()', function ( type, idx ) {
+	_api_  ( 'column.index()', function ( type, idx ) {
 		if ( this.context.length !== 0 ) {
 			var ctx = this.context[0];
 	
@@ -8697,7 +8697,7 @@
 		}
 	} );
 	
-	_api_register( 'column()', function ( selector, opts ) {
+	_api_  ( 'column()', function ( selector, opts ) {
 		return _selector_first( this.columns( selector, opts ) );
 	} );
 	
@@ -8788,7 +8788,7 @@
 	
 	
 	
-	_api_register( 'cells()', function ( rowSelector, columnSelector, opts ) {
+	_api_  ( 'cells()', function ( rowSelector, columnSelector, opts ) {
 		// Argument shifting
 		if ( $.isPlainObject( rowSelector ) ) {
 			// Indexes
@@ -8846,7 +8846,7 @@
 	} );
 	
 	
-	_api_registerPlural( 'cells().nodes()', 'cell().node()', function () {
+	_api_  Plural( 'cells().nodes()', 'cell().node()', function () {
 		return this.iterator( 'cell', function ( settings, row, column ) {
 			var data = settings.aoData[ row ];
 	
@@ -8857,14 +8857,14 @@
 	} );
 	
 	
-	_api_register( 'cells().data()', function () {
+	_api_  ( 'cells().data()', function () {
 		return this.iterator( 'cell', function ( settings, row, column ) {
 			return _fnGetCellData( settings, row, column );
 		}, 1 );
 	} );
 	
 	
-	_api_registerPlural( 'cells().cache()', 'cell().cache()', function ( type ) {
+	_api_  Plural( 'cells().cache()', 'cell().cache()', function ( type ) {
 		type = type === 'search' ? '_aFilterData' : '_aSortData';
 	
 		return this.iterator( 'cell', function ( settings, row, column ) {
@@ -8873,14 +8873,14 @@
 	} );
 	
 	
-	_api_registerPlural( 'cells().render()', 'cell().render()', function ( type ) {
+	_api_  Plural( 'cells().render()', 'cell().render()', function ( type ) {
 		return this.iterator( 'cell', function ( settings, row, column ) {
 			return _fnGetCellData( settings, row, column, type );
 		}, 1 );
 	} );
 	
 	
-	_api_registerPlural( 'cells().indexes()', 'cell().index()', function () {
+	_api_  Plural( 'cells().indexes()', 'cell().index()', function () {
 		return this.iterator( 'cell', function ( settings, row, column ) {
 			return {
 				row: row,
@@ -8891,7 +8891,7 @@
 	} );
 	
 	
-	_api_registerPlural( 'cells().invalidate()', 'cell().invalidate()', function ( src ) {
+	_api_  Plural( 'cells().invalidate()', 'cell().invalidate()', function ( src ) {
 		return this.iterator( 'cell', function ( settings, row, column ) {
 			_fnInvalidate( settings, row, src, column );
 		} );
@@ -8899,12 +8899,12 @@
 	
 	
 	
-	_api_register( 'cell()', function ( rowSelector, columnSelector, opts ) {
+	_api_  ( 'cell()', function ( rowSelector, columnSelector, opts ) {
 		return _selector_first( this.cells( rowSelector, columnSelector, opts ) );
 	} );
 	
 	
-	_api_register( 'cell().data()', function ( data ) {
+	_api_  ( 'cell().data()', function ( data ) {
 		var ctx = this.context;
 		var cell = this[0];
 	
@@ -8952,7 +8952,7 @@
 	 * @param {array} order 2D array of sorting information to be applied.
 	 * @returns {DataTables.Api} this
 	 */
-	_api_register( 'order()', function ( order, dir ) {
+	_api_  ( 'order()', function ( order, dir ) {
 		var ctx = this.context;
 	
 		if ( order === undefined ) {
@@ -8989,14 +8989,14 @@
 	 * @param {function} [callback] callback function when sort is run
 	 * @returns {DataTables.Api} this
 	 */
-	_api_register( 'order.listener()', function ( node, column, callback ) {
+	_api_  ( 'order.listener()', function ( node, column, callback ) {
 		return this.iterator( 'table', function ( settings ) {
 			_fnSortAttachListener( settings, node, column, callback );
 		} );
 	} );
 	
 	
-	_api_register( 'order.fixed()', function ( set ) {
+	_api_  ( 'order.fixed()', function ( set ) {
 		if ( ! set ) {
 			var ctx = this.context;
 			var fixed = ctx.length ?
@@ -9015,7 +9015,7 @@
 	
 	
 	// Order by the selected column(s)
-	_api_register( [
+	_api_  ( [
 		'columns().order()',
 		'column().order()'
 	], function ( dir ) {
@@ -9034,7 +9034,7 @@
 	
 	
 	
-	_api_register( 'search()', function ( input, regex, smart, caseInsen ) {
+	_api_  ( 'search()', function ( input, regex, smart, caseInsen ) {
 		var ctx = this.context;
 	
 		if ( input === undefined ) {
@@ -9060,7 +9060,7 @@
 	} );
 	
 	
-	_api_registerPlural(
+	_api_  Plural(
 		'columns().search()',
 		'column().search()',
 		function ( input, regex, smart, caseInsen ) {
@@ -9093,14 +9093,14 @@
 	 * State API methods
 	 */
 	
-	_api_register( 'state()', function () {
+	_api_  ( 'state()', function () {
 		return this.context.length ?
 			this.context[0].oSavedState :
 			null;
 	} );
 	
 	
-	_api_register( 'state.clear()', function () {
+	_api_  ( 'state.clear()', function () {
 		return this.iterator( 'table', function ( settings ) {
 			// Save an empty object
 			settings.fnStateSaveCallback.call( settings.oInstance, settings, {} );
@@ -9108,14 +9108,14 @@
 	} );
 	
 	
-	_api_register( 'state.loaded()', function () {
+	_api_  ( 'state.loaded()', function () {
 		return this.context.length ?
 			this.context[0].oLoadedState :
 			null;
 	} );
 	
 	
-	_api_register( 'state.save()', function () {
+	_api_  ( 'state.save()', function () {
 		return this.iterator( 'table', function ( settings ) {
 			_fnSaveState( settings );
 		} );
@@ -9255,7 +9255,7 @@
 	/**
 	 *
 	 */
-	_api_register( '$()', function ( selector, opts ) {
+	_api_  ( '$()', function ( selector, opts ) {
 		var
 			rows   = this.rows( opts ).nodes(), // Get all rows
 			jqRows = $(rows);
@@ -9269,7 +9269,7 @@
 	
 	// jQuery functions to operate on the tables
 	$.each( [ 'on', 'one', 'off' ], function (i, key) {
-		_api_register( key+'()', function ( /* event, handler */ ) {
+		_api_  ( key+'()', function ( /* event, handler */ ) {
 			var args = Array.prototype.slice.call(arguments);
 	
 			// Add the `dt` namespace automatically if it isn't already present
@@ -9286,32 +9286,32 @@
 	} );
 	
 	
-	_api_register( 'clear()', function () {
+	_api_  ( 'clear()', function () {
 		return this.iterator( 'table', function ( settings ) {
 			_fnClearTable( settings );
 		} );
 	} );
 	
 	
-	_api_register( 'settings()', function () {
+	_api_  ( 'settings()', function () {
 		return new _Api( this.context, this.context );
 	} );
 	
 	
-	_api_register( 'init()', function () {
+	_api_  ( 'init()', function () {
 		var ctx = this.context;
 		return ctx.length ? ctx[0].oInit : null;
 	} );
 	
 	
-	_api_register( 'data()', function () {
+	_api_  ( 'data()', function () {
 		return this.iterator( 'table', function ( settings ) {
 			return _pluck( settings.aoData, '_aData' );
 		} ).flatten();
 	} );
 	
 	
-	_api_register( 'destroy()', function ( remove ) {
+	_api_  ( 'destroy()', function ( remove ) {
 		remove = remove || false;
 	
 		return this.iterator( 'table', function ( settings ) {
@@ -9409,7 +9409,7 @@
 	
 	// Add the `every()` method for rows, columns and cells in a compact form
 	$.each( [ 'column', 'row', 'cell' ], function ( i, type ) {
-		_api_register( type+'s().every()', function ( fn ) {
+		_api_  ( type+'s().every()', function ( fn ) {
 			var opts = this.selector.opts;
 			var api = this;
 	
@@ -9439,7 +9439,7 @@
 	
 	// i18n method for extensions to be able to use the language object from the
 	// DataTable
-	_api_register( 'i18n()', function ( token, def, plural ) {
+	_api_  ( 'i18n()', function ( token, def, plural ) {
 		var ctx = this.context[0];
 		var resolved = _fnGetObjectDataFn( token )( ctx.oLanguage );
 	
@@ -10642,7 +10642,7 @@
 	
 		/**
 		 * This function is called when a TR element is created (and all TD child
-		 * elements have been inserted), or registered if using a DOM source, allowing
+		 * elements have been inserted), or   ed if using a DOM source, allowing
 		 * manipulation of the TR element (adding classes etc).
 		 *  @type function
 		 *  @param {node} row "TR" element for the current row
