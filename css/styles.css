@@ -2190,7 +2190,7 @@ textarea.form-control {
   width: 100%;
   margin-top: 0.25rem;
   font-size: 80%;
-  color: #28a745;
+  color: #282aa7;
 }
 
 .valid-tooltip {
@@ -2486,7 +2486,7 @@ fieldset:disabled a.btn {
 }
 .btn-primary.disabled, .btn-primary:disabled {
   color: #fff;
-  background-color: #1abc9c;
+  background-color: #0c099e;
   border-color: #1abc9c;
 }
 .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
@@ -2530,18 +2530,18 @@ fieldset:disabled a.btn {
 
 .btn-success {
   color: #fff;
-  background-color: #28a745;
-  border-color: #28a745;
+  background-color: #283ba7;
+  border-color: #2831a7;
 }
 .btn-success:hover {
   color: #fff;
-  background-color: #218838;
-  border-color: #1e7e34;
+  background-color: #212388;
+  border-color: #212388;
 }
 .btn-success:focus, .btn-success.focus {
   color: #fff;
-  background-color: #218838;
-  border-color: #1e7e34;
+  background-color: #212388;
+  border-color: #212388;
   box-shadow: 0 0 0 0.2rem rgba(72, 180, 97, 0.5);
 }
 .btn-success.disabled, .btn-success:disabled {
@@ -2551,7 +2551,7 @@ fieldset:disabled a.btn {
 }
 .btn-success:not(:disabled):not(.disabled):active, .btn-success:not(:disabled):not(.disabled).active, .show > .btn-success.dropdown-toggle {
   color: #fff;
-  background-color: #1e7e34;
+  background-color: #212388;
   border-color: #1c7430;
 }
 .btn-success:not(:disabled):not(.disabled):active:focus, .btn-success:not(:disabled):not(.disabled).active:focus, .show > .btn-success.dropdown-toggle:focus {
@@ -4734,7 +4734,7 @@ a.badge-secondary:focus, a.badge-secondary.focus {
 }
 a.badge-success:hover, a.badge-success:focus {
   color: #fff;
-  background-color: #1e7e34;
+  background-color: #212388;
 }
 a.badge-success:focus, a.badge-success.focus {
   outline: 0;
@@ -6094,7 +6094,7 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: #1abc9c !important;
+  background-color: #1d1abc !important;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
@@ -6120,7 +6120,7 @@ button.bg-secondary:focus {
 a.bg-success:hover, a.bg-success:focus,
 button.bg-success:hover,
 button.bg-success:focus {
-  background-color: #1e7e34 !important;
+  background-color: #212388 !important;
 }
 
 .bg-info {
